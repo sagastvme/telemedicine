@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Bienvenido</title>
+    <link rel="icon" href="icono.png" type="image/icon type">
+   <link rel="stylesheet" href='css/perfil.css'>
+</head>
+<body>
+<header>
+    <img width="50px" src="{{ app.user.fotoPerfil }}" alt="foto de perfil del usuario" onclick="misDatos()" id="miPerfil">
+    <h1 >Bienvenido {{ app.user.usuario }}</h1>
+
+    {% if app.user.tipo=='Paciente' %}
+        <button href="#" onclick="imprimirEspecialidades()" id="escribir">Escribir mensaje</button>
+        <button href="#" onclick="manejarRecetasPaciente()" id="manejadorRecetasPaciente">Tus recetas</button>
+
+    {% else %}
+        <button href="#" onclick="mensajearMedicos()" id="escribir">Escribir mensaje</button>
+        <button href="#" onclick="manejarRecetas()" id="manejadorRecetas">Tus recetas</button>
+    {% endif %}
+    <button onclick=" crearBuscadorReceta()" id="receta">Consulta una receta</button>
+    <button href="#" onclick=" tusConsultas()" id="consulta">Tus consultas</button>
+    <button href="#" onclick=" bandejaDeMensajes()" id="consulta">Bandeja de mensajes</button>
+    <a href="{{ path('ctrl_logout') }}">Cerrar sesión</a>
+    <a href="#" onclick="borrarCuenta()">Borrar cuenta</a>
+</header>
+<hr>
+<div id="contenedor"></div>
+<script type="text/javascript" src="js/funciones.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,178 @@
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #f2f2f2;
+}
+
+h1 {
+    text-align: center;
+    margin: 0;
+}
+
+img {
+    width: 50px;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+a,
+button {
+    color: white;
+    text-decoration: none;
+    background-color: #4CAF50;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+
+a:hover,
+button:hover {
+    background-color: #3e8e41;
+}
+
+#miPerfil:hover {
+    opacity: 0.7;
+}
+
+#contenedor {
+    margin-top: 2rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    header {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    img {
+        margin-right: 0.5rem;
+    }
+
+    button,
+    a {
+        margin-top: 0.5rem;
+        margin-right: 0.5rem;
+    }
+    #datosListados {
+        max-width: 90%;
+        margin: 0 auto;
+    }
+    #contenedor li img {
+        width: 30px;
+    }
+
+
+}
+
+#datosListados, #listaConsultas {
+    text-align: justify;
+}
+
+#datosListados li {
+    margin-bottom: 1rem;
+}
+
+
+input[type="file"] {
+    display: none;
+}
+
+label[for="foto"] {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.5rem;
+    border: none;
+    border-radius: 0.25rem;
+    cursor: pointer;
+    display: inline-block;
+}
+
+label[for="foto"]:hover {
+    background-color: #3e8e41;
+}
+#contenedor {
+    display: flex;
+
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+ul {
+    list-style-type: none;
+}
+#contenedor * {
+    margin: 10px;
+    font-size: 1.2em;
+}
+#listaConsultas li {
+    margin-bottom: 30px;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+td {
+    padding: 10px;
+    text-align: left;
+}
+
+
+
+input[type="text"],
+textarea {
+    padding: 10px;
+    width: 90%;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0 0 5px gray;
+    margin-bottom: 10px;
+}
+
+textarea {
+    height: 200px;
+    margin: 5px;
+}
+#contenedor img{
+    width: 50px;
+    border-radius: 50px;
+}
+#conversacion {
+    height: 500px;
+    max-height: 80vh; /* Establece la altura máxima del contenedor en el 80% de la altura visible del dispositivo */
+    overflow-y: scroll;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+#conversacionBandeja {
+    max-height: 600px; /* Establece la altura máxima del contenedor */
+    max-width: 600px; /* Establece la altura
+            overflow-y: auto; /* Añade scroll vertical si el contenido excede el tamaño del contenedor */
+}
+
+.Y {
+    background-color: #d4f7d4; /* Establece el color de fondo verde clarito para los elementos con clase Y */
+}
+
+.N {
+    background-color: #ffb5b5; /* Establece el color de fondo rojo clarito para los elementos con clase N */
+}
+#contenedor h2{
+    font-size:2em;
+    background-color: #ffb5b5;
+}
+#conversacion {
+    max-width: 90%;
+    width: 100%;
+    margin: 0 auto;
+}
+

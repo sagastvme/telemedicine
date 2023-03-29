@@ -1,0 +1,23 @@
+security:
+  providers:
+    usuario:
+      entity:
+        class: App\Entity\Usuario
+        property: usuario
+  encoders:
+    App\Entity\Usuario:
+      algorithm: argon2i
+  firewalls:
+    dev:
+      pattern: ^/(_(confirmarCuenta|profiler|wdt)|css|images|js)/
+      security: false
+      anonymous: true
+    main:
+      anonymous: true
+      form_login:
+        login_path: ctrl_login
+        check_path: ctrl_login
+        default_target_path: app_portada
+      logout:
+        path: ctrl_logout
+        target: ctrl_login

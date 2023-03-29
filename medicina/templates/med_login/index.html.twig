@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>LogIn</title>
+    <link rel="icon" href="icono.png" type="image/icon type">
+   <link rel="stylesheet" href="css/login.css">
+</head>
+<body>
+<div class="login-container">
+    <h1>Log In</h1>
+    <form action="{{ path('ctrl_login') }}" method="post">
+        <label for="_username">Email</label>
+        <input type="text" name="_username" id="_username">
+        <label for="_password">Password</label>
+        <input type="password" name="_password" id="_password">
+        <input type="submit" value="Iniciar sesión">
+    </form>
+    <div class="register-links">
+        <a href="#" onclick="registrateFormularioMedico()">Regístrate si eres un medico</a>
+        <a href="#" onclick="registrateFormularioPaciente()">Regístrate si eres un paciente</a>
+    </div>
+    <button href="#" onclick="crearBuscadorReceta()" id="receta">Consulta una receta</button>
+</div>
+<div id="contenedor"></div>
+<script type="text/javascript" src="js/funciones.js"></script>
+<script type="text/javascript" src="js/registrate.js"></script>
+</body>
+
+</html>

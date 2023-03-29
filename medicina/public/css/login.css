@@ -1,0 +1,119 @@
+/* Estilos generales */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+h1 {
+    text-align: center;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="text"],
+input[type="password"],
+select,
+input[type="email"],
+input[type="date"],
+input[type="number"] {
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 2px solid #ddd;
+    width: 100%;
+}
+
+input[type="submit"],
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+}
+
+input[type="submit"]:hover,
+button:hover {
+    background-color: #45a049;
+}
+
+a {
+    display: block;
+    text-align: center;
+    margin-top: 10px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+
+@media only screen and (min-width: 768px) {
+    /* Estilos para dispositivos con ancho de pantalla mayor o igual a 768px */
+
+    /* Estilos para dispositivos con ancho de pantalla mayor o igual a 768px */
+    form,#contenedor,button {
+        max-width: 400px;
+        margin: 0 auto;
+
+    }
+
+    #contenedor {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+    }
+
+
+
+
+}
+
+
+#contenedor ul {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    text-align: justify;
+}
+#contenedor,button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#idReceta {
+    margin: auto;
+}
+
+
+
+
